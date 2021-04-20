@@ -1,0 +1,1 @@
+cmd_/home/rtai/Desktop/ECAS/V4.0_2pendules/arcom2/controle.ko := i386-linux-ld -m elf_i386 -m elf_i386 -r -o /home/rtai/Desktop/ECAS/V4.0_2pendules/arcom2/controle.ko /home/rtai/Desktop/ECAS/V4.0_2pendules/arcom2/controle.o /home/rtai/Desktop/ECAS/V4.0_2pendules/arcom2/controle.mod.o

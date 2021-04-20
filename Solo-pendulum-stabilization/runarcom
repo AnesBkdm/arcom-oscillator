@@ -1,0 +1,29 @@
+
+#!/bin/sh
+ 
+cat <<-EOF
+
+Vous pouvez lancer tout module dont vous avez precise le nom (sans le .o en parametre
+Type <return> to install modules, then <return> again when you want to stop it
+EOF
+
+read junk
+sudo insmod /usr/realtime/modules/rtai_hal.ko
+sudo insmod /usr/realtime/modules/rtai_sched.ko
+sudo insmod dac.ko
+sudo insmod adc.ko
+sudo insmod controle.ko
+sudo insmod main_prog.ko
+
+echo "Program is running"
+echo "Type <return> to remove modules"
+read junk
+
+sudo rmmod main_prog
+sudo rmmod controle
+sudo rmmod dac
+sudo rmmod adc
+
+sudo rmmod rtai_sched
+sudo rmmod rtai_hal
+

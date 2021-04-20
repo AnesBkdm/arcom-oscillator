@@ -1,0 +1,1 @@
+cmd_/home/rtai/ECAS/ECAS/V3.1_bus_can_asserv_asyn_asyn/arcom2/main_prog.ko := ld -m elf_i386 -m elf_i386 -r -o /home/rtai/ECAS/ECAS/V3.1_bus_can_asserv_asyn_asyn/arcom2/main_prog.ko /home/rtai/ECAS/ECAS/V3.1_bus_can_asserv_asyn_asyn/arcom2/main_prog.o /home/rtai/ECAS/ECAS/V3.1_bus_can_asserv_asyn_asyn/arcom2/main_prog.mod.o
